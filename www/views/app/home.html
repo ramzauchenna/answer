@@ -1,0 +1,32 @@
+<ion-view class="profile-view">
+  <ion-nav-title>
+    <span>Question for the Day</span>
+  </ion-nav-title>
+  <ion-content>
+    <div class="list card">
+
+      <div class="item item-avatar">
+        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg">
+        <h2>Question</h2>
+        <p class="item-text-wrap">What is the name of the musician that sang only women bleed</p>
+      </div>
+        <ion-list ng-hide="choices.choice">
+          <ion-radio ng-model="choices.choice"  ng-value="'A'" >Choose A</ion-radio>
+          <ion-radio ng-model="choices.choice" ng-value="'B'">Choose B</ion-radio>
+          <ion-radio ng-model="choices.choice" ng-value="'C'">Choose C</ion-radio>
+          <ion-radio ng-model="choices.choice" ng-value="'D'">Choose D</ion-radio>
+        </ion-list>
+
+      <a class="item item-icon-left assertive" href="#" ng-show="choices.choice">
+        <i class="icon ion-android-star"></i>
+         Your answer is {{choices.choice}}
+      </a>
+
+      <a class="item item-icon-left assertive" href="#" ng-click="retry()" ng-show="choices.choice">
+        <i class="icon ion-reply"></i>
+        Retry
+      </a>
+
+    </div>
+  </ion-content>
+</ion-view>
