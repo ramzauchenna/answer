@@ -8,6 +8,22 @@
               <label class="item item-input">
                 <input type="email" placeholder="Email" name="user_email" ng-model="user.email" required>
               </label>
+              <label class="item item-input">
+                <input type="text" placeholder="Name" name="user_name" ng-model="user.name" required>
+              </label>
+              <label class="item item-input">
+                <input type="number" placeholder="Age" name="user_age" ng-model="user.age" required>
+              </label>
+              <label class="item item-input">
+                <input type="number" placeholder="Phone Number" name="user_phone" ng-model="user.phone" required>
+              </label>
+              <label class="item item-input">
+                <select name="user_location" ng-model="user.location">
+                  <option value="nigeria" selected>Nigeria</option>
+                  <option value="unitedKingdom">UnitedKingdom</option>
+                  <option value="america">America</option>
+                </select>
+              </label>
               <label class="item item-input" show-hide-container>
                 <input type="password" placeholder="Password" name="user_password" ng-model="user.password" required show-hide-input>
               </label>
